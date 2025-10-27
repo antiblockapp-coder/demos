@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Meta Tags & Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свяжитесь с нами - Контакты Sof arendus OÜ</title>
+    <meta name="description" content="Свяжитесь с Sof arendus OÜ. Телефон, email, адрес офиса в Таллине. Оставьте заявку на бесплатную консультацию.">
+    
+    <!-- Favicons & External Resources -->
+    <link rel="icon" href="images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="contacts-page">
+
+    <!-- NAVIGATION -->
+    <nav id="nav">
+        <a href="index.html" class="logo" style="cursor: pointer;">SOF ARENDUS</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#why-us">Почему мы</a></li>
+            <li><a href="index.html#services">Услуги</a></li>
+            <li><a href="works.html">Наши работы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="images/stalkmet.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1.5rem;">Свяжитесь с нами</h1>
+            <p class="hero-description" style="max-width: 700px; margin: 0 auto 2rem auto; font-size: 1.125rem;">
+                Мы всегда готовы помочь вам и ответить на ваши вопросы
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO & FORM -->
+    <section class="section" style="padding: 6rem 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info fade-in">
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 2rem; font-weight: 400;">Наши контакты</h2>
+                    
+                    <div class="contact-detail">
+                        <label>Телефон</label>
+                        <a href="tel:+37256887298">+372 56 88 72 98</a>
+                        <a href="tel:+37255333039" style="display: block; margin-top: 0.5rem;">+372 55 33 039</a>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <label>Email</label>
+                        <a href="mailto:stalkmet@stalkmet.com">stalkmet@stalkmet.com</a>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <label>Адрес офиса</label>
+                        <p style="font-size: 1.125rem; margin: 0;">
+                            Peterburi tee 23, Väike Paala 1<br>
+                            Tallinn, Estonia
+                        </p>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <label>Компания</label>
+                        <p style="font-size: 1.125rem; margin: 0; font-weight: 500;">
+                            Sof arendus OÜ
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="contact-form fade-in">
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 1rem; font-weight: 400;">Отправить запрос</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        Оставьте заявку на бесплатную консультацию и расчет стоимости вашего проекта.
+                    </p>
+                    
+                    <div class="form-group">
+                        <label for="name">Имя *</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Электронная почта *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <input type="text" id="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="organization">Организация</label>
+                        <input type="text" id="organization">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" required rows="6"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION MAP -->
+    <section class="section" style="background: var(--bg-primary); padding: 6rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Как нас найти</div>
+                <h2 class="section-title">Наше местоположение</h2>
+            </div>
+            
+            <div class="fade-in" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 20px rgba(0,0,0,0.1); height: 450px; display: flex; align-items: center; justify-content: center;">
+                <!-- Google Maps Placeholder - можно заменить на реальную карту -->
+                <div style="text-align: center; padding: 3rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;">📍</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        <strong>Адрес:</strong> Peterburi tee 23, Väike Paala 1, Tallinn, Estonia
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                        Здесь можно встроить Google Maps с помощью iframe
+                    </p>
+                </div>
+                
+                <!-- Для настоящей карты используйте:
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section certificates">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Качество</div>
+                <h2 class="section-title">Наши сертификаты</h2>
+            </div>
+            
+            <div class="certificates-intro fade-in">
+                <p style="margin-bottom: 1.5rem;">
+                    Sof arendus производит и монтирует металлоконструкции для объектов любого типа назначения 
+                    в соответствии с <strong>"EN 1090, 3834 - EXC2, EXC3"</strong>.
+                </p>
+                <p>
+                    Мы реализуем проекты, начиная с проектирования дома, имея лицензию архитектора - 
+                    <strong>"ARHITEKT TASE 7"</strong> и выполняя основные строительные работы - <strong>"TÖÖJUHT 5"</strong>.
+                </p>
+            </div>
+            
+            <div class="certificates-grid">
+                <!-- Сертификат 1 -->
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon">🏆</div>
+                    <h3 class="certificate-title">Сертификат ЕС</h3>
+                    <div class="certificate-subtitle">ISO 9001, ISO 14001, OHSAS 18001</div>
+                    <p class="certificate-description">
+                        Контроль заводского производства. Соответствие европейским стандартам качества 
+                        и безопасности производства.
+                    </p>
+                </div>
+                
+                <!-- Сертификат 2 -->
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon">⚙️</div>
+                    <h3 class="certificate-title">Сертификат TÜV</h3>
+                    <div class="certificate-subtitle">EN 1090, 3834 - EXC2, EXC3</div>
+                    <p class="certificate-description">
+                        Система управления качеством сварки. Подтверждение высочайших стандартов 
+                        в производстве металлоконструкций.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="section clients">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Наши клиенты</div>
+                <h2 class="section-title">Нам доверяют профессионалы отрасли</h2>
+            </div>
+            
+            <div class="clients-intro fade-in">
+                <p>
+                    Мы гордимся тем, что нашими клиентами являются такие крупные компании. 
+                    Наше сотрудничество и обратная связь вдохновляют нас на поиски инновационных решений 
+                    и способствуют тому, что мы постоянно развиваемся и растем с каждым днем.
+                </p>
+            </div>
+            
+            <div class="clients-logos">
+                <div class="client-logo fade-in">Компания 1</div>
+                <div class="client-logo fade-in">Компания 2</div>
+                <div class="client-logo fade-in">Компания 3</div>
+                <div class="client-logo fade-in">Компания 4</div>
+                <div class="client-logo fade-in">Компания 5</div>
+                <div class="client-logo fade-in">Компания 6</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">SOF ARENDUS OÜ</div>
+        <p class="footer-text">
+            Инновационные строительные решения<br>
+            Превосходство в каждой детали
+        </p>
+        
+        <div style="margin-top: 2rem; color: rgba(255,255,255,0.6); font-size: 0.875rem;">
+            <p style="margin-bottom: 1rem;">Sof arendus OÜ</p>
+            <p style="margin-bottom: 0.5rem;">Peterburi tee 23, Väike Paala 1, Tallinn, Estonia</p>
+            <p style="margin-bottom: 0.5rem;">
+                Телефон: <a href="tel:+37256887298" style="color: rgba(255,255,255,0.8);">+372 56 88 72 98</a> | 
+                <a href="tel:+37255333039" style="color: rgba(255,255,255,0.8);">+372 55 33 039</a>
+            </p>
+            <p style="margin-bottom: 0.5rem;">
+                Email: <a href="mailto:stalkmet@stalkmet.com" style="color: rgba(255,255,255,0.8);">stalkmet@stalkmet.com</a>
+            </p>
+        </div>
+        
+        <div class="footer-bottom">© 2025 Sof arendus OÜ. Все права защищены.</div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
