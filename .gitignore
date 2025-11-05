@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (если будут использоваться)
+node_modules/
+npm-debug.log
+
+# Временные файлы
+*.tmp
+*.bak
+*.log
+
