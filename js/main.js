@@ -158,6 +158,92 @@ const initContactForm = () => {
 };
 
 // ================================
+// Contact Modal Handler
+// ================================
+const initContactModal = () => {
+    const modal = document.getElementById('contactModal');
+    const openButtons = document.querySelectorAll('.open-contact-modal');
+    const closeButton = document.querySelector('.modal-close');
+    const modalForm = document.getElementById('contactFormModal');
+    
+    // Open modal
+    openButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (modal) {
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        });
+    });
+    
+    // Close modal
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            if (modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+    
+    // Close modal when clicking outside
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
+            modal.classList.remove('show');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    });
+    
+    // Handle modal form submission
+    if (modalForm) {
+        modalForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('modal-name').value,
+                email: document.getElementById('modal-email').value,
+                phone: document.getElementById('modal-phone').value,
+                message: document.getElementById('modal-message').value
+            };
+            
+            console.log('Modal form submitted:', formData);
+            
+            // Show success message
+            alert('Спасибо за ваше сообщение. Мы свяжемся с вами в ближайшее время.');
+            
+            // Reset form
+            modalForm.reset();
+            
+            // Close modal
+            if (modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+            
+            // Here you can add AJAX call to send data to server
+            // Example:
+            // fetch('/api/contact', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify(formData)
+            // })
+        });
+    }
+};
+
+// ================================
 // Initialize All
 // ================================
 const init = () => {
@@ -168,6 +254,7 @@ const init = () => {
             initSmoothScroll();
             initScrollAnimations();
             initContactForm();
+            initContactModal();
             initVideoBackground(); // Инициализация видео фона
         });
     } else {
@@ -176,6 +263,7 @@ const init = () => {
         initSmoothScroll();
         initScrollAnimations();
         initContactForm();
+        initContactModal();
         initVideoBackground(); // Инициализация видео фона
     }
 };
